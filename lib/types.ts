@@ -43,3 +43,10 @@ export interface ContactInfo {
   linkedin: string;
   github: string;
 }
+
+export interface ContactRow {
+  label: string;
+  value: string;
+  href?: string;
+  external?: boolean;
+}

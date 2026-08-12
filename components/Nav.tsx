@@ -4,11 +4,11 @@ import { useState } from "react";
 import { navItems, siteName } from "@/lib/data";
 
 const linkClass =
-  "font-mono text-sm text-muted underline-offset-4 transition-colors hover:text-text hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold";
+  "relative font-mono text-sm text-muted transition-colors hover:text-text after:absolute after:inset-x-0 after:-bottom-0.5 after:h-px after:origin-left after:scale-x-0 after:bg-gold after:transition-transform after:duration-300 hover:after:scale-x-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold";
 
 export function Nav() {
   const [open, setOpen] = useState(false);
-  const links = navItems.slice(0, -1);
+  const links = navItems;
 
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-ink/80 backdrop-blur">

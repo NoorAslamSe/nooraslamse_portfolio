@@ -1,5 +1,6 @@
 import type {
   ContactInfo,
+  ContactRow,
   HeroHeadingSegment,
   HeroStat,
   NavItem,
@@ -201,3 +202,25 @@ export const contactInfo: ContactInfo = {
   linkedin: "linkedin.com/in/nooraslamse",
   github: "github.com/nooraslamse",
 };
+
+export const contactEyebrow = "Contact";
+
+export const contactHeading = "Let's work together";
+
+export const contactRows: ContactRow[] = [
+  { label: "Email", value: contactInfo.email, href: `mailto:${contactInfo.email}` },
+  { label: "Phone", value: contactInfo.phone, href: `tel:${contactInfo.phone.replace(/\s|-/g, "")}` },
+  { label: "Location", value: contactInfo.location },
+  { label: "LinkedIn", value: contactInfo.linkedin, href: `https://${contactInfo.linkedin}`, external: true },
+  { label: "GitHub", value: contactInfo.github, href: `https://${contactInfo.github}`, external: true },
+];
+
+export const contactFormNameLabel = "Name";
+
+export const contactFormEmailLabel = "Email";
+
+export const contactFormMessageLabel = "Project details";
+
+export const contactFormSubmitLabel = "Send message";
+
+export const contactFormSubject = "Project inquiry from";
