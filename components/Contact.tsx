@@ -99,7 +99,12 @@ export function Contact() {
             </dl>
           </div>
 
-          <form onSubmit={handleSubmit} className="mt-8 space-y-5">
+          <form
+            onSubmit={handleSubmit}
+            action={contactFormEndpoint}
+            method="POST"
+            className="mt-8 space-y-5"
+          >
             <div className="grid gap-5 sm:grid-cols-2">
               <div>
                 <label htmlFor="contact-name" className={labelClass}>
@@ -147,20 +152,22 @@ export function Contact() {
             <button
               type="submit"
               disabled={status === "sending"}
-              className="rounded-[3px] bg-gold px-6 py-3 font-mono text-sm font-medium text-ink transition-colors hover:bg-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold disabled:cursor-not-allowed disabled:opacity-60"
+              className="cursor-pointer rounded-[3px] bg-gold px-6 py-3 font-mono text-sm font-medium text-ink transition-colors hover:bg-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold disabled:cursor-wait disabled:opacity-60"
             >
               {status === "sending"
                 ? "Sending..."
                 : `${contactFormSubmitLabel} \u2192`}
             </button>
             {status === "success" ? (
-              <p className="font-mono text-sm text-teal">
-                Thanks {name} — your message is on its way to my inbox.
+              <p className="rounded-[3px] border border-teal/30 bg-teal/10 px-3 py-2 font-mono text-sm text-teal">
+                Submitted — thanks {name || "for your message"}! I&apos;ll reply
+                to you soon.
               </p>
             ) : null}
             {status === "error" ? (
-              <p className="font-mono text-sm text-gold">
-                Something went wrong. Please email me directly or try again.
+              <p className="rounded-[3px] border border-gold/40 bg-gold/10 px-3 py-2 font-mono text-sm text-gold">
+                Failed to submit. Please try again, or email me directly at{" "}
+                {contactInfo.email}.
               </p>
             ) : null}
           </form>
