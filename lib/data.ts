@@ -202,6 +202,14 @@ export const wordpressProjects: Project[] = [
 
 export const nextjsProjects: Project[] = [
   {
+    title: "Outdoor",
+    badge: "Travel",
+    description:
+      "Travel website built with Next.js — showcasing outdoor destinations and adventures with a fast, modern frontend.",
+    stack: ["Next.js", "Tailwind CSS", "Responsive Design"],
+    url: "https://outdoor-next.vercel.app/",
+  },
+  {
     title: "cockpit.travel",
     badge: "In Progress",
     description:
@@ -210,12 +218,12 @@ export const nextjsProjects: Project[] = [
     statusText: "Private team repo",
   },
   {
-    title: "Personal Portfolio v2",
-    badge: "In Progress",
+    title: "My Portfolio",
+    badge: "Complete",
     description:
-      "This site, rebuilt properly — a Next.js rewrite of the portfolio, developed section-by-section with a spec-driven workflow (OpenSpec) instead of freehand coding.",
+      "This website — a Next.js portfolio built section-by-section with a spec-driven workflow (OpenSpec) instead of freehand coding, now live.",
     stack: ["Next.js", "OpenSpec", "Vercel"],
-    statusText: "Building in public soon",
+    statusText: "Live",
   },
 ];
 
