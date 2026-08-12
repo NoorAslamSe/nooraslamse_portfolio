@@ -46,7 +46,7 @@ export function About() {
           <div className="space-y-6">
             {skillGroups.map((group) => (
               <div key={group.label}>
-                <h3 className="font-mono text-xs uppercase tracking-wider text-muted">
+                <h3 className="font-mono text-xs uppercase tracking-wider text-gold">
                   {group.label}
                 </h3>
                 <ul className="mt-3 flex flex-wrap gap-2">

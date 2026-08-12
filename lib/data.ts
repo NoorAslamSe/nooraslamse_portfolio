@@ -51,7 +51,7 @@ export const stackCycleItems = [
 
 export const aboutEyebrow = "About";
 
-export const aboutHeading = "WordPress craft, developer mind";
+export const aboutHeading = "Next.js & WordPress Developer";
 
 export const languagesLabel = "Languages";
 
@@ -68,9 +68,9 @@ export const nextjsTabLabel = "Next.js";
 export const visitSiteLabel = "Visit site";
 
 export const aboutBio = [
-  "I started as a WordPress Developer Intern at BeeSocial in 2024 and have since shipped full production websites for restaurants, real estate agencies, e-commerce stores, and solar companies — handling everything from theme customization and Elementor builds to Core Web Vitals optimization and on-page SEO.",
-  "Alongside client work, I run Meta and Google Ads campaigns, manage GoHighLevel CRM workflows, and integrate Odoo 19 for backend business operations — so I'm as comfortable talking to a client about lead generation as I am debugging a layout break.",
-  "I'm now expanding into React.js and Next.js, working on a multilingual travel platform (cockpit.travel) and rebuilding my own portfolio with a proper spec-driven workflow — because I want to design and build custom frontends, not just customize themes.",
+  "I started as a WordPress Developer Intern at BeeSocial in 2025 and have since shipped full production websites for restaurants, real estate agencies, e-commerce stores, and solar companies — handling everything from theme customization and Elementor builds to Core Web Vitals optimization and on-page SEO.",
+  "Alongside client work, I integrate Odoo 19 (including for restaurant operations) and run Meta and Google Ads for my own projects — so I'm as comfortable handling digital marketing as I am debugging a layout break.",
+  "Having built solid proficiency in React.js and Next.js, I am currently working with them on projects like a multilingual travel platform (cockpit.travel) and rebuilding my own portfolio with a proper spec-driven workflow — because I want to design and build custom frontends, not just customize themes.",
 ];
 
 export const languages = [
@@ -86,7 +86,16 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     label: "Frontend",
-    tags: ["HTML5/CSS3", "JavaScript ES6+", "Bootstrap 5", "Responsive Design"],
+    tags: [
+      "HTML5/CSS3",
+      "JavaScript ES6+",
+      "Tailwind CSS",
+      "React.js",
+      "Next.js",
+      "REST APIs",
+      "Responsive Design",
+      "Frontend Architecture",
+    ],
   },
   {
     label: "Performance & SEO",
@@ -97,13 +106,26 @@ export const skillGroups: SkillGroup[] = [
     tags: ["Meta Ads", "Google Ads", "GoHighLevel", "Odoo 19"],
   },
   {
-    label: "Currently learning",
-    tags: ["React.js", "Next.js", "REST APIs", "Frontend Architecture"],
-    learning: true,
+    label: "AI",
+    tags: [
+      "Spec-Driven Development",
+      "OpenCode",
+      "Claude",
+      "Gemini",
+      "ChatGPT",
+      "DeepSeek",
+    ],
   },
 ];
 
 export const timeline: TimelineEntry[] = [
+  {
+    period: "Jun 2026 – Present",
+    role: "Next.js Developer",
+    company: "BeeSocial",
+    description:
+      "Building custom React and Next.js frontends — a multilingual travel platform (cockpit.travel) pulling live flight, hotel, and car-rental data, plus a spec-driven rebuild of this portfolio.",
+  },
   {
     period: "Jan 2025 – Present",
     role: "WordPress & Frontend Developer",
@@ -169,12 +191,12 @@ export const wordpressProjects: Project[] = [
     url: "https://www.art.beesocialpk.com/",
   },
   {
-    title: "Good Health Nutrition",
+    title: "GoodHealth",
     badge: "E-Commerce",
     description:
-      "Astra-theme supplement storefront with strong Core Web Vitals and structured data across product and category pages.",
-    stack: ["Astra", "WooCommerce", "Core Web Vitals"],
-    url: "https://goodhealthnutrition.co/",
+      "WooCommerce medicine store built on the Martfury theme — custom landing pages for products and a popup for sales alerts to boost conversions.",
+    stack: ["Martfury", "WooCommerce", "Custom Landing Pages"],
+    url: "https://goodhealth.com.pk/",
   },
 ];
 
