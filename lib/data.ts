@@ -258,3 +258,5 @@ export const contactFormMessageLabel = "Project details";
 export const contactFormSubmitLabel = "Send message";
 
 export const contactFormSubject = "Project inquiry from";
+
+export const contactFormEndpoint = "https://formspree.io/f/xgawyvrr";

@@ -4,9 +4,9 @@ import { useState, type FormEvent } from "react";
 import {
   contactEyebrow,
   contactFormEmailLabel,
+  contactFormEndpoint,
   contactFormMessageLabel,
   contactFormNameLabel,
-  contactFormSubject,
   contactFormSubmitLabel,
   contactHeading,
   contactInfo,
@@ -19,16 +19,37 @@ const inputClass =
 const labelClass =
   "mb-2 block font-mono text-xs uppercase tracking-wider text-muted";
 
+type FormStatus = "idle" | "sending" | "success" | "error";
+
 export function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [status, setStatus] = useState<FormStatus>("idle");
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const subject = encodeURIComponent(`${contactFormSubject} ${name}`);
-    const body = encodeURIComponent(`${message}\n\n— ${name}\n${email}`);
-    window.location.href = `mailto:${contactInfo.email}?subject=${subject}&body=${body}`;
+    setStatus("sending");
+    try {
+      const response = await fetch(contactFormEndpoint, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({ name, email, message }),
+      });
+      if (response.ok) {
+        setStatus("success");
+        setName("");
+        setEmail("");
+        setMessage("");
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   }
 
   return (
@@ -125,10 +146,23 @@ export function Contact() {
             </div>
             <button
               type="submit"
-              className="rounded-[3px] bg-gold px-6 py-3 font-mono text-sm font-medium text-ink transition-colors hover:bg-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
+              disabled={status === "sending"}
+              className="rounded-[3px] bg-gold px-6 py-3 font-mono text-sm font-medium text-ink transition-colors hover:bg-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold disabled:cursor-not-allowed disabled:opacity-60"
             >
-              {contactFormSubmitLabel} &rarr;
+              {status === "sending"
+                ? "Sending..."
+                : `${contactFormSubmitLabel} \u2192`}
             </button>
+            {status === "success" ? (
+              <p className="font-mono text-sm text-teal">
+                Thanks {name} — your message is on its way to my inbox.
+              </p>
+            ) : null}
+            {status === "error" ? (
+              <p className="font-mono text-sm text-gold">
+                Something went wrong. Please email me directly or try again.
+              </p>
+            ) : null}
           </form>
         </div>
       </div>
