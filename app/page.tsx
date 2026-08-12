@@ -1,23 +1,18 @@
-import { Header } from "@/components/layout/header";
-import { Footer } from "@/components/layout/footer";
-import { Hero } from "@/app/sections/hero";
-import { About } from "@/app/sections/about";
-import { Skills } from "@/app/sections/skills";
-import { Projects } from "@/app/sections/projects";
-import { Contact } from "@/app/sections/contact";
-
 export default function Home() {
   return (
-    <>
-      <Header />
-      <main className="flex-1">
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
-    </>
+    <main className="flex-1">
+      <div className="mx-auto w-full max-w-[1120px] px-8 py-24">
+        <p className="font-mono text-sm text-gold">
+          noor@peshawar ~ % scaffold-ok
+        </p>
+        <h1 className="mt-4 font-display text-4xl font-medium">
+          Design tokens + fonts verified.
+        </h1>
+        <p className="mt-4 max-w-xl text-muted">
+          Fraunces, Inter, JetBrains Mono loaded. Ink, gold, teal tokens
+          active.
+        </p>
+      </div>
+    </main>
   );
 }

@@ -3,37 +3,43 @@ export interface NavItem {
   href: string;
 }
 
-export interface SocialLink {
+export interface HeroStat {
+  value: string;
   label: string;
-  url: string;
 }
 
-export interface SkillCategory {
-  title: string;
-  skills: string[];
+export interface HeroHeadingSegment {
+  text: string;
+  emphasis?: boolean;
 }
 
-export interface ProjectLink {
+export interface SkillGroup {
   label: string;
-  url: string;
+  tags: string[];
+  learning?: boolean;
+}
+
+export interface TimelineEntry {
+  period: string;
+  role: string;
+  company: string;
+  description: string;
 }
 
 export interface Project {
   title: string;
+  badge: string;
   description: string;
-  technologies: string[];
-  links: ProjectLink[];
-  image: string;
+  stack: string[];
+  url?: string;
+  statusText?: string;
 }
 
-export interface SiteConfig {
-  name: string;
-  role: string;
-  tagline: string;
-  bio: string;
-  location: string;
-  facts: string[];
-  navItems: NavItem[];
+export interface ContactInfo {
+  intro: string;
   email: string;
-  socials: SocialLink[];
+  phone: string;
+  location: string;
+  linkedin: string;
+  github: string;
 }
