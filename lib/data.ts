@@ -48,6 +48,10 @@ export const aboutEyebrow = "About";
 
 export const aboutHeading = "WordPress craft, developer mind";
 
+export const languagesLabel = "Languages";
+
+export const aboutExperienceLabel = "Experience";
+
 export const aboutBio = [
   "I started as a WordPress Developer Intern at BeeSocial in 2024 and have since shipped full production websites for restaurants, real estate agencies, e-commerce stores, and solar companies — handling everything from theme customization and Elementor builds to Core Web Vitals optimization and on-page SEO.",
   "Alongside client work, I run Meta and Google Ads campaigns, manage GoHighLevel CRM workflows, and integrate Odoo 19 for backend business operations — so I'm as comfortable talking to a client about lead generation as I am debugging a layout break.",
