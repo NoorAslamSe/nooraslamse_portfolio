@@ -18,7 +18,7 @@ export const navItems: NavItem[] = [
   { label: "Contact", href: "#contact" },
 ];
 
-export const heroTerminalLine = "noor@peshawar ~ % whoami";
+export const heroTerminalLine = "Who am I";
 
 export const heroHeading: HeroHeadingSegment[] = [
   { text: "Building websites that " },
@@ -28,21 +28,25 @@ export const heroHeading: HeroHeadingSegment[] = [
 ];
 
 export const heroSubtext =
-  "I'm Noor Aslam, a WordPress & Frontend Developer in Peshawar, Pakistan — one year deep into shipping client sites, and currently rebuilding my own toolkit around React and Next.js.";
+  "Hi, I'm Noor Aslam, a Junior Next.js Developer and Frontend & WordPress Developer based in Peshawar, Pakistan. Backed by a year of shipping client projects, I specialize in crafting fast, scalable web experiences leveraging Next.js, React, WordPress, and modern web standards.";
 
 export const heroStats: HeroStat[] = [
-  { value: "6+", label: "Live client sites" },
+  { value: "10+", label: "Live client sites" },
   { value: "85–95", label: "PageSpeed score" },
   { value: "20+", label: "Bugs resolved" },
   { value: "1yr+", label: "Professional exp." },
 ];
 
 export const stackCycleItems = [
+  "Next.js + React",
+  "JavaScript (ES6+)",
+  "CSS + Tailwind CSS",
   "WordPress + Elementor",
   "WooCommerce",
-  "Next.js + React",
+  "Responsive Design",
   "Core Web Vitals",
   "Odoo 19",
+  "GoHighLevel",
 ];
 
 export const aboutEyebrow = "About";

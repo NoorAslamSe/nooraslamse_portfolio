@@ -35,7 +35,7 @@ export function Nav() {
 
         <a
           href="#contact"
-          className="hidden font-mono text-sm text-text transition-colors hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold md:inline-flex"
+          className="hidden rounded-[3px] border border-line px-6 py-3 font-mono text-sm font-medium text-text transition-colors hover:border-gold hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold md:inline-flex"
         >
           Let&apos;s talk&nbsp;&rarr;
         </a>
