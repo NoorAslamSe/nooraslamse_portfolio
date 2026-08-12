@@ -9,7 +9,7 @@ import type {
   TimelineEntry,
 } from "@/lib/types";
 
-export const siteName = "noor.dev";
+export const siteName = "Noor Aslam";
 
 export const navItems: NavItem[] = [
   { label: "Home", href: "#home" },
