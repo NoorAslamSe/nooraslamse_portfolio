@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import {
   contactInfo,
@@ -92,18 +93,18 @@ export function Hero() {
         </div>
 
         <div className="mt-10 flex flex-wrap items-center gap-4">
-          <a
-            href="#projects"
+          <Link
+            href="/projects"
             className="rounded-[3px] bg-gold px-6 py-3 font-mono text-sm font-medium text-ink transition-colors hover:bg-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
           >
             View projects
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            href="/contact"
             className="rounded-[3px] border border-line px-6 py-3 font-mono text-sm font-medium text-text transition-colors hover:border-gold hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
           >
             Get in touch
-          </a>
+          </Link>
         </div>
 
         <dl className="mt-16 grid grid-cols-2 gap-px border border-line bg-line sm:grid-cols-4">

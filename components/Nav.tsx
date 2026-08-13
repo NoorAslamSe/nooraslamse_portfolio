@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { navItems, siteName } from "@/lib/data";
 
@@ -16,29 +17,29 @@ export function Nav() {
         aria-label="Primary"
         className="relative mx-auto flex h-16 w-full max-w-[1120px] items-center justify-between px-8"
       >
-        <a
-          href="#home"
+        <Link
+          href="/"
           className="font-mono text-base tracking-tight text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
         >
           {siteName}
-        </a>
+        </Link>
 
         <ul className="hidden items-center gap-8 md:flex">
           {links.map((item) => (
             <li key={item.href}>
-              <a href={item.href} className={linkClass}>
+              <Link href={item.href} className={linkClass}>
                 {item.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
 
-        <a
-          href="#contact"
+        <Link
+          href="/contact"
           className="hidden rounded-[3px] border border-line px-6 py-3 font-mono text-sm font-medium text-text transition-colors hover:border-gold hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold md:inline-flex"
         >
           Let&apos;s talk&nbsp;&rarr;
-        </a>
+        </Link>
 
         <button
           type="button"
@@ -73,23 +74,23 @@ export function Nav() {
           <ul className="flex flex-col">
             {navItems.map((item) => (
               <li key={item.href}>
-                <a
+                <Link
                   href={item.href}
                   onClick={() => setOpen(false)}
                   className="flex min-h-11 items-center border-b border-line/50 font-mono text-base text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
                 >
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
             <li className="pt-4">
-              <a
-                href="#contact"
+              <Link
+                href="/contact"
                 onClick={() => setOpen(false)}
                 className="inline-flex font-mono text-sm text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold"
               >
                 Let&apos;s talk&nbsp;&rarr;
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
