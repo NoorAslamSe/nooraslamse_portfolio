@@ -26,6 +26,9 @@ export const metadata: Metadata = {
   title: "Noor Aslam — Portfolio",
   description:
     "WordPress & Frontend Developer in Peshawar, Pakistan — building websites that load fast and convert.",
+  verification: {
+    google: "O6cafbR6jI0JqPRay94QKiG-Nt5Hr2n1QZ7T4TGVSN8",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
