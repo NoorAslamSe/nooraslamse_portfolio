@@ -198,6 +198,14 @@ export const wordpressProjects: Project[] = [
     stack: ["Martfury", "WooCommerce", "Custom Landing Pages"],
     url: "https://goodhealth.com.pk/",
   },
+  {
+    title: "REZTST",
+    badge: "Travel Agency",
+    description:
+      "Complete travel agency website built with WordPress, offering flight tickets, hotel reservations, car rentals, airport transfers, and tours & activities from one platform. Flight search and booking are integrated through the Travel Layout WordPress plugin.",
+    stack: ["WordPress", "Travel Layout", "Travel Booking System", "Flight Search & Booking", "Tours & Activities"],
+    url: "https://reztst.com/",
+  },
 ];
 
 export const nextjsProjects: Project[] = [
