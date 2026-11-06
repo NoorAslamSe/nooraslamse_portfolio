@@ -206,6 +206,14 @@ export const wordpressProjects: Project[] = [
     stack: ["WordPress", "Travel Layout", "Travel Booking System", "Flight Search & Booking", "Tours & Activities"],
     url: "https://reztst.com/",
   },
+  {
+    title: "Doha Mover Packer",
+    badge: "Moving Services",
+    description:
+      "3-ton pickup, moving, and packing website for a Qatar-based transport company, built with WordPress and Elementor. Covers house and office shifting, villa moving, furniture transport, packing and wrapping, loading, labour, and removal services — with a 99 performance score.",
+    stack: ["WordPress", "Elementor", "Performance 99", "SEO"],
+    url: "https://dohamoverpacker.com/",
+  },
 ];
 
 export const nextjsProjects: Project[] = [
