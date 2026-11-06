@@ -183,14 +183,6 @@ export const wordpressProjects: Project[] = [
     url: "https://www.nhengineerings.com/",
   },
   {
-    title: "Darvesh Café",
-    badge: "Restaurant",
-    description:
-      "Savour-theme café site with menu displays and ambiance galleries; Odoo 19 integration for day-to-day business operations.",
-    stack: ["WordPress", "Odoo 19", "Performance"],
-    url: "https://www.art.beesocialpk.com/",
-  },
-  {
     title: "GoodHealth",
     badge: "E-Commerce",
     description:
@@ -218,7 +210,7 @@ export const wordpressProjects: Project[] = [
 
 export const nextjsProjects: Project[] = [
   {
-    title: "AB",
+    title: "AB.Limo",
     badge: "Enterprise",
     description:
       "Large-scale corporate and event ground transportation platform across Saudi Arabia, UAE, and Qatar — covering chauffeur and VIP, airport transfers, corporate and event transport, bus and coach hire, workforce mobility, and tourism. Worked as a Junior Next.js Developer on the frontend, building responsive, production-grade pages and components.",
