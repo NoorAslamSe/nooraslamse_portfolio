@@ -218,12 +218,12 @@ export const nextjsProjects: Project[] = [
     url: "https://www.ab.limo/",
   },
   {
-    title: "Outdoor",
-    badge: "Travel",
+    title: "My Portfolio",
+    badge: "Complete",
     description:
-      "Travel website built with Next.js — showcasing outdoor destinations and adventures with a fast, modern frontend.",
-    stack: ["Next.js", "Tailwind CSS", "Responsive Design"],
-    url: "https://outdoor-next.vercel.app/",
+      "This website — a Next.js portfolio built section-by-section with a spec-driven workflow (OpenSpec) instead of freehand coding, now live.",
+    stack: ["Next.js", "OpenSpec", "Vercel"],
+    statusText: "Live",
   },
   {
     title: "cockpit.travel",
@@ -234,12 +234,20 @@ export const nextjsProjects: Project[] = [
     statusText: "Private team repo",
   },
   {
-    title: "My Portfolio",
-    badge: "Complete",
+    title: "Medixa",
+    badge: "In Progress",
     description:
-      "This website — a Next.js portfolio built section-by-section with a spec-driven workflow (OpenSpec) instead of freehand coding, now live.",
-    stack: ["Next.js", "OpenSpec", "Vercel"],
-    statusText: "Live",
+      "Shopify-to-Next.js e-commerce migration currently under development. Working as a frontend developer on the admin dashboard for uploading products, managing orders, and handling day-to-day store operations, plus a Shopify-style product bundling system.",
+    stack: ["Next.js", "React", "Admin Dashboard", "E-Commerce", "Bundling System"],
+    statusText: "Under development",
+  },
+  {
+    title: "Outdoor",
+    badge: "Travel",
+    description:
+      "Travel website built with Next.js — showcasing outdoor destinations and adventures with a fast, modern frontend.",
+    stack: ["Next.js", "Tailwind CSS", "Responsive Design"],
+    url: "https://outdoor-next.vercel.app/",
   },
 ];
 
