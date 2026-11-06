@@ -210,6 +210,14 @@ export const wordpressProjects: Project[] = [
 
 export const nextjsProjects: Project[] = [
   {
+    title: "AB",
+    badge: "Enterprise",
+    description:
+      "Large-scale corporate and event ground transportation platform across Saudi Arabia, UAE, and Qatar — covering chauffeur and VIP, airport transfers, corporate and event transport, bus and coach hire, workforce mobility, and tourism. Worked as a Junior Next.js Developer on the frontend, building responsive, production-grade pages and components.",
+    stack: ["Next.js", "React", "Tailwind CSS", "Frontend Development"],
+    url: "https://www.ab.limo/",
+  },
+  {
     title: "Outdoor",
     badge: "Travel",
     description:
